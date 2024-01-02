@@ -10,7 +10,7 @@ function App() {
     return (
         <>
         <header>
-          <h3 className="container">Galaxy Gaze</h3>
+          {/* <h3 className="container">Galaxy Gaze</h3> */}
                 <Nav />
             </header>
             <Routes>
