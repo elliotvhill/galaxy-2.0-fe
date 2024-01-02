@@ -18,12 +18,6 @@ function App() {
                 <Route path='/search' element={<Search />} />
                 <Route path='/account' element={<Account />} />
             </Routes>
-            {/* <div className="container py-4 px-3 mx-auto">
-                <button className='btn btn-primary'>Primary button</button>
-                <button className='btn btn-secondary'>Secondary button</button>
-                <button className='btn btn-warning'>Warning button</button>
-                <button className='btn btn-danger'>Danger button</button>
-            </div> */}
         </>
     )
 }
