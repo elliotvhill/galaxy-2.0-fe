@@ -9,7 +9,8 @@ import Search from "./js/components/Search"
 function App() {
     return (
         <>
-            <header>
+        <header>
+          <h3 className="container">Galaxy Gaze</h3>
                 <Nav />
             </header>
             <Routes>
