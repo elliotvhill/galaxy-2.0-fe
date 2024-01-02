@@ -3,27 +3,35 @@ import { Link } from "react-router-dom"
 const Nav = () => {
     return (
         <>
-            <div className='nav navbar navbar-expand-lg bg-body-tertiary justify-content-center'>
-                <li className='navbar-brand'>
-                    <Link to='/' className='nav-link'>
-                    <h3>Galaxy Gaze</h3>
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link to='/' className='nav-link'>
-                        Home
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link to='/account' className='nav-link'>
-                        Account
-                    </Link>
-                </li>
-                <li className='nav-item'>
-                    <Link to='/search' className='nav-link'>
-                        Search
-                    </Link>
-                </li>
+            <div className='container'>
+                <header className='d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom  bg-body-tertiary'>
+                    <a
+                        href='/'
+                        className='d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none'
+                    >
+                        <Link to='/' className='nav-link'>
+                            <span className='fs-4'>Galaxy Gaze</span>
+                        </Link>
+                    </a>
+
+                    <ul className='nav nav-pills'>
+                        <li className='nav-item'>
+                            <Link to='/' className='nav-link'>
+                                Home
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/account' className='nav-link'>
+                                Account
+                            </Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/search' className='nav-link'>
+                                Search
+                            </Link>
+                        </li>
+                    </ul>
+                </header>
             </div>
         </>
     )
