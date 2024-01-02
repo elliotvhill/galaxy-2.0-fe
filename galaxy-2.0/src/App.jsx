@@ -5,11 +5,12 @@ import Home from "./js/components/Home"
 import Nav from "./js/components/Nav"
 import Account from "./js/components/Account"
 import Search from "./js/components/Search"
+import Footer from "./js/components/Footer"
 
 function App() {
     return (
         <>
-        <header>
+            <header>
                 <Nav />
             </header>
             <Routes>
@@ -17,6 +18,7 @@ function App() {
                 <Route path='/search' element={<Search />} />
                 <Route path='/account' element={<Account />} />
             </Routes>
+            <Footer />
         </>
     )
 }
