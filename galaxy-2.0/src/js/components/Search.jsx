@@ -9,19 +9,25 @@ function Search() {
                     <p className='fw-medium'>
                         This is where the search functionality will live.
                     </p>
+                    <div className="container container-fluid">
                     <form
-                        class='col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3'
+                        className='col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3'
                         role='search'
                         data-form-type=''
-                    >
+                        >
                         <input
                             type='search'
-                            class='form-control'
+                            className='form-control'
                             placeholder='Search the cosmos...'
                             aria-label='Search'
                             data-form-type=''
-                        ></input>
+                            ></input>
+                            <button
+                                className='btn btn-outline-primary'
+                                type='submit'
+                            >Search</button>
                     </form>
+                            </div>
                 </div>
             </div>
         </>

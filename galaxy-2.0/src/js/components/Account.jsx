@@ -1,6 +1,12 @@
 import React from "react"
 
 function Account() {
+    const logIn = () => {
+        console.log('login clicked')
+    }
+    const signUp = () => {
+        console.log('Sign me up!')
+    }
     return (
         <>
             <div className='container'>
@@ -11,8 +17,8 @@ function Account() {
                         While logged in, users will be able to update account
                         details.
                     </p>
-                    <button className='btn btn-outline-primary'>Sign up</button>
-                    <button className='btn btn-outline-success'>Login</button>
+                    <button className='btn btn-outline-primary' onClick={signUp}>Sign up</button>
+                    <button className='btn btn-outline-success' onClick={logIn}>Login</button>
                 </div>
             </div>
         </>
