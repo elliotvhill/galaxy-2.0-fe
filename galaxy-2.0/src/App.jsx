@@ -10,12 +10,12 @@ import UserContext from "./UserContext"
 
 function App() {
     // create user info
-    // const [userInfo, setUserInfo] = useState({
-    //     userId: null,
-    //     username: '',
-    //     password: '',
-    //     email: '',
-    // })
+    const [userInfo, setUserInfo] = useState({
+        userId: null,
+        username: '',
+        password: '',
+        email: '',
+    })
 
     // create login status
     // const [loggedIn, setLoggedIn] = useState(false)
@@ -32,7 +32,7 @@ function App() {
 
     return (
         <>
-            <UserContext.Provider>
+            <UserContext.Provider value={{ userInfo, setUserInfo }}>
                 <header>
                     <Nav />
                 </header>

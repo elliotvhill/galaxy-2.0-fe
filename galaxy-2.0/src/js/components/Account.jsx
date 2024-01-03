@@ -17,8 +17,8 @@ function Account() {
                         While logged in, users will be able to update account
                         details.
                     </p>
-                    <button className='btn btn-outline-primary' onClick={signUp}>Sign up</button>
-                    <button className='btn btn-outline-success' onClick={logIn}>Login</button>
+                    <button className='btn btn-outline-primary mx-1' onClick={signUp}>Sign up</button>
+                    <button className='btn btn-outline-success mx-1' onClick={logIn}>Login</button>
                 </div>
             </div>
         </>
