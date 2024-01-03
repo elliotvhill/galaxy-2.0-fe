@@ -2,7 +2,7 @@ import React from "react"
 
 function Account() {
     const logIn = () => {
-        console.log('login clicked')
+        console.log('Login clicked')
     }
     const signUp = () => {
         console.log('Sign me up!')
