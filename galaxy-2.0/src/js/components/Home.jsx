@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 function Home() {
     return (
@@ -11,7 +12,9 @@ function Home() {
                         Galaxy Gaze is an astronomy tracking app that allows you
                         to search for and track your favorite celestial objects.
                     </p>
-                    <button className='btn btn-primary'>Let's go!</button>
+                    <Link to='/search' className='nav-link'>
+                        <button className='btn btn-primary'>Let's go!</button>
+                    </Link>
                 </div>
             </div>
         </>
