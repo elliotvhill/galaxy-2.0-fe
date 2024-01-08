@@ -2,16 +2,19 @@ import React, { useState, useEffect, useContext } from "react"
 import UserContext from "../../UserContext"
 
 function Search() {
-
+    const [searchInput, setSearchInput] = useState("")
+    const [searchResults, setSearchResults] = useState([])
+    const [loading, setLoading] = useState(false)
     const handleChange = (e) => {
-        console.log('Change handled')
+        setSearchInput(e.target.value)
+        console.log(searchInput)
+        
     }
-    
+
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('Submit handled')
+        console.log("Submit handled")
     }
-
 
     return (
         <>
