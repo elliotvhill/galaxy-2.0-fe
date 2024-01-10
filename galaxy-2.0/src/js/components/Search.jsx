@@ -8,14 +8,18 @@ function Search() {
 
     const handleChange = (e) => {
         setSearchInput(e.target.value)
-        console.log(searchInput)
     }
-
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log("Submit handled")
+        console.log('Searched:', searchInput)
         setSearchInput('')
     }
+    
+        // useEffect(() => {
+        //     console.log(searchInput)
+        // }, [searchInput])
 
     return (
         <>
