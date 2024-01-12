@@ -25,9 +25,9 @@ function Search() {
         <>
             <div className='container'>
                 <div className='container-fluid'>
-                    <h3 className='fw-light'> This is Search </h3>
+                    <h3 className='fw-light'> Search </h3>
                     <p className='fw-medium'>
-                        This is where the search functionality will live.
+                        Search for a deep space object to observe.
                     </p>
                     <form
                         className='col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3'
