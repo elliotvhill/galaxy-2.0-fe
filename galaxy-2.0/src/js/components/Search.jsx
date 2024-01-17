@@ -3,8 +3,6 @@ import UserContext from "../../UserContext"
 
 function Search() {
     const [searchInput, setSearchInput] = useState("")
-    const [searchResults, setSearchResults] = useState([])
-    const [loading, setLoading] = useState(false)
 
     const handleChange = (e) => {
         setSearchInput(e.target.value)
@@ -16,10 +14,7 @@ function Search() {
         console.log('Searched:', searchInput)
         setSearchInput('')
     }
-    
-        // useEffect(() => {
-        //     console.log(searchInput)
-        // }, [searchInput])
+
 
     return (
         <>
