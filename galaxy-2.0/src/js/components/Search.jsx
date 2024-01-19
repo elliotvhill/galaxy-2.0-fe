@@ -1,20 +1,19 @@
-import React, { useState, useEffect, useContext } from "react"
-import UserContext from "../../UserContext"
+import React, { useState, useEffect, useContext } from 'react'
+import UserContext from '../../UserContext'
 
 function Search() {
-    const [searchInput, setSearchInput] = useState("")
+    const [searchInput, setSearchInput] = useState('')
 
     const handleChange = (e) => {
         setSearchInput(e.target.value)
     }
-    
+
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log("Submit handled")
+        console.log('Submit handled')
         console.log('Searched:', searchInput)
         setSearchInput('')
     }
-
 
     return (
         <>
